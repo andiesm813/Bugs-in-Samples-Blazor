@@ -2,11 +2,22 @@
     display: flex;
 }
 .floating-action-button-container {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 24px;
+    height: 100%;
+}
+.group {
     justify-content: center;
     align-items: center;
     align-content: flex-start;
     gap: 24px;
-    height: 100%;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 .button {
     width: max-content;
