@@ -1,0 +1,82 @@
+@page "/button-styles"
+
+<div class="row-layout button-styles-container">
+    <div class="column-layout group">
+        <p class="typography__subtitle-2 text">
+            Raised
+        </p>
+        <div class="row-layout group_1">
+            <IgbButton class="button" button-styles-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton class="button" button-styles-scope>
+                <span class="material-icons">
+                    dashboard
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+    </div>
+    <div class="column-layout group">
+        <p class="typography__subtitle-2 text">
+            Outline
+        </p>
+        <div class="row-layout group_1">
+            <IgbButton Variant="ButtonVariant.Outlined" class="button" button-styles-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Outlined" class="button" button-styles-scope>
+                <span class="material-icons">
+                    dashboard
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+    </div>
+    <div class="column-layout group">
+        <p class="typography__subtitle-2 text">
+            Flat
+        </p>
+        <div class="row-layout group_1">
+            <IgbButton Variant="ButtonVariant.Flat" class="button" button-styles-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat" class="button" button-styles-scope>
+                <span class="material-icons">
+                    dashboard
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+    </div>
+    <div class="column-layout group">
+        <p class="typography__subtitle-2 text">
+            With Dropdown
+        </p>
+        <div class="row-layout group_1">
+            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => _dropdown1!.ToggleAsync(_button1))" @ref="_button1" class="button" button-styles-scope>
+                <span>Button</span>
+                <span class="material-icons">
+                    keyboard_arrow_down
+                </span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbDropdown @ref="_dropdown1" class="dropdown" button-styles-scope>
+                <IgbDropdownItem>
+                    Option
+                </IgbDropdownItem>
+            </IgbDropdown>
+        </div>
+    </div>
+</div>
+
+@code {
+    private IgbButton? _button1;
+    private IgbDropdown? _dropdown1;
+}

@@ -1,0 +1,324 @@
+@page "/master-view-2"
+@inject NavigationManager NavigationManager
+
+<div class="row-layout resizing-issue-container">
+    <IgbButton Variant="ButtonVariant.Fab" @onclick="@(e => Navigate(""))" class="button" resizing-issue-scope>
+        <span class="material-icons">
+            keyboard_backspace
+        </span>
+        <span>Back to other Master</span>
+        <IgbRipple></IgbRipple>
+    </IgbButton>
+    <div class="column-layout left_nav">
+        <h6 class="content">
+            Tasks
+        </h6>
+        <div class="row-layout group">
+            <p class="typography__body-1 content_1">
+                VD Team
+            </p>
+            <IgbBadge class="badge" resizing-issue-scope>
+                11
+            </IgbBadge>
+        </div>
+        <div class="column-layout group_1">
+            <p class="typography__subtitle-2 content">
+                LISTS
+            </p>
+            <IgbList class="list" resizing-issue-scope>
+                <IgbListItem>
+                    <div slot="title">General</div>
+                    <div slot="end">
+                        <span class="material-icons icon">
+                            more_vert
+                        </span>
+                    </div>
+                </IgbListItem>
+                <IgbListItem>
+                    <div slot="title">App Builder</div>
+                    <div slot="end">
+                        <span class="material-icons icon">
+                            more_vert
+                        </span>
+                    </div>
+                </IgbListItem>
+                <IgbListItem>
+                    <div slot="title">Indigo.Design</div>
+                    <div slot="end">
+                        <span class="material-icons icon">
+                            more_vert
+                        </span>
+                    </div>
+                </IgbListItem>
+                <IgbListItem>
+                    <div slot="title">Marketing</div>
+                    <div slot="end">
+                        <span class="material-icons icon">
+                            more_vert
+                        </span>
+                    </div>
+                </IgbListItem>
+                <IgbListItem>
+                    <div slot="title">Customer Portal</div>
+                    <div slot="end">
+                        <span class="material-icons icon">
+                            more_vert
+                        </span>
+                    </div>
+                </IgbListItem>
+            </IgbList>
+            <IgbButton Variant="ButtonVariant.Flat" class="button_1" resizing-issue-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>FILTER</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+        <div class="column-layout group_1">
+            <p class="typography__subtitle-2 content">
+                FILTERS
+            </p>
+            <IgbList class="list" resizing-issue-scope>
+                <IgbListItem>
+                    <div slot="title">Due this Week</div>
+                    <div slot="end">
+                        <span class="material-icons icon">
+                            more_vert
+                        </span>
+                    </div>
+                </IgbListItem>
+                <IgbListItem>
+                    <div slot="title">Overdue</div>
+                    <div slot="end">
+                        <span class="material-icons icon">
+                            more_vert
+                        </span>
+                    </div>
+                </IgbListItem>
+            </IgbList>
+            <IgbButton Variant="ButtonVariant.Flat" class="button_1" resizing-issue-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>FILTER</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+    </div>
+    <div class="column-layout right-content-1">
+        <div class="row-layout content_toolbar-1">
+            <h5 class="content_1">
+                VD Team
+            </h5>
+            <div class="row-layout group_2">
+                <IgbButton Variant="ButtonVariant.Flat" class="button_2" resizing-issue-scope>
+                    <span class="material-icons">
+                        list
+                    </span>
+                    <span>LIST</span>
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbButton Variant="ButtonVariant.Flat" class="button_2" resizing-issue-scope>
+                    <span class="material-icons">
+                        calendar_view_day
+                    </span>
+                    <span>SECTION</span>
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbButton Variant="ButtonVariant.Flat" class="button_2" resizing-issue-scope>
+                    <span class="material-icons">
+                        dns
+                    </span>
+                    <span>FIELDS</span>
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" resizing-issue-scope>
+                    <span class="material-icons">
+                        filter_list
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+                <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" resizing-issue-scope>
+                    <span class="material-icons">
+                        more_vert
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+            </div>
+        </div>
+        <div class="row-layout group_3">
+            <div class="column-layout group_4">
+                <div class="column-layout group_5">
+                    <div class="column-layout group_6">
+                        <h6 class="content">
+                            Developer Tools
+                        </h6>
+                        <p class="typography__subtitle-2 content">
+                            Release 2020.2
+                        </p>
+                    </div>
+                    <IgbList class="list" resizing-issue-scope>
+                        <IgbListItem>
+                            <div slot="start">
+                                <IgbAvatar Src="assets/Avatar1.png" Shape="AvatarShape.Circle" class="avatar" resizing-issue-scope></IgbAvatar>
+                            </div>
+                            <div slot="title">Download any Ultimate product and take notes on the download process</div>
+                            <div slot="subtitle">Product download process experience</div>
+                            <div slot="end">
+                                <span class="material-icons icon">
+                                    edit
+                                </span>
+                            </div>
+                        </IgbListItem>
+                        <IgbListItem>
+                            <div slot="start">
+                                <IgbAvatar Src="assets/Avatar2.png" Shape="AvatarShape.Circle" class="avatar" resizing-issue-scope></IgbAvatar>
+                            </div>
+                            <div slot="title">Report about the downloaded ultimate products to the Marketing Team</div>
+                            <div slot="subtitle">Product download process experience</div>
+                            <div slot="end">
+                                <span class="material-icons icon">
+                                    edit
+                                </span>
+                            </div>
+                        </IgbListItem>
+                    </IgbList>
+                    <IgbButton Variant="ButtonVariant.Flat" class="button_1" resizing-issue-scope>
+                        <span class="material-icons">
+                            add
+                        </span>
+                        <span>task</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </div>
+                <div class="column-layout group_5">
+                    <div class="column-layout group_7">
+                        <h6 class="content">
+                            App Builder
+                        </h6>
+                        <p class="typography__subtitle-2 content">
+                            September release - Sprint 1
+                        </p>
+                    </div>
+                    <IgbList class="list" resizing-issue-scope>
+                        <IgbListItem>
+                            <div slot="start">
+                                <IgbAvatar Src="assets/Avatar3.png" Shape="AvatarShape.Circle" class="avatar" resizing-issue-scope></IgbAvatar>
+                            </div>
+                            <div slot="title">Research new sample app</div>
+                            <div slot="subtitle">New sample application</div>
+                            <div slot="end">
+                                <span class="material-icons icon">
+                                    edit
+                                </span>
+                            </div>
+                        </IgbListItem>
+                        <IgbListItem>
+                            <div slot="start">
+                                <IgbAvatar Src="assets/Avatar2.png" Shape="AvatarShape.Circle" class="avatar" resizing-issue-scope></IgbAvatar>
+                            </div>
+                            <div slot="title">Create visual design for new sample app</div>
+                            <div slot="subtitle">New sample application</div>
+                            <div slot="end">
+                                <span class="material-icons icon">
+                                    edit
+                                </span>
+                            </div>
+                        </IgbListItem>
+                        <IgbListItem>
+                            <div slot="start">
+                                <IgbAvatar Src="assets/Avatar5.png" Shape="AvatarShape.Circle" class="avatar" resizing-issue-scope></IgbAvatar>
+                            </div>
+                            <div slot="title">Implementation for new sample app</div>
+                            <div slot="subtitle">New sample application</div>
+                            <div slot="end">
+                                <span class="material-icons icon">
+                                    edit
+                                </span>
+                            </div>
+                        </IgbListItem>
+                        <IgbListItem>
+                            <div slot="start">
+                                <IgbAvatar Src="assets/Avatar6.png" Shape="AvatarShape.Circle" class="avatar" resizing-issue-scope></IgbAvatar>
+                            </div>
+                            <div slot="title">Tweaks in List component</div>
+                            <div slot="subtitle">App Builder UI Components</div>
+                            <div slot="end">
+                                <span class="material-icons icon">
+                                    edit
+                                </span>
+                            </div>
+                        </IgbListItem>
+                        <IgbListItem>
+                            <div slot="start">
+                                <IgbAvatar Src="assets/Avatar1.png" Shape="AvatarShape.Circle" class="avatar" resizing-issue-scope></IgbAvatar>
+                            </div>
+                            <div slot="title">QE of new App Builder components</div>
+                            <div slot="subtitle">App Builder UI Components</div>
+                            <div slot="end">
+                                <span class="material-icons icon">
+                                    edit
+                                </span>
+                            </div>
+                        </IgbListItem>
+                        <IgbListItem>
+                            <div slot="start">
+                                <IgbAvatar Src="assets/Avatar4.png" Shape="AvatarShape.Circle" class="avatar" resizing-issue-scope></IgbAvatar>
+                            </div>
+                            <div slot="title">Implementation of Chips component</div>
+                            <div slot="subtitle">App Builder UI Components</div>
+                            <div slot="end">
+                                <span class="material-icons icon">
+                                    edit
+                                </span>
+                            </div>
+                        </IgbListItem>
+                    </IgbList>
+                    <IgbButton Variant="ButtonVariant.Flat" class="button_1" resizing-issue-scope>
+                        <span class="material-icons">
+                            add
+                        </span>
+                        <span>task</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </div>
+            </div>
+            <div class="column-layout group_8">
+                <IgbCalendar HideHeader="false" class="calendar" resizing-issue-scope></IgbCalendar>
+                <div class="column-layout group_5">
+                    <h6 class="content">
+                        Release Calendar
+                    </h6>
+                    <IgbList class="list" resizing-issue-scope>
+                        <IgbListItem>
+                            <div slot="title">App Builder</div>
+                            <div slot="subtitle">Product download process experience</div>
+                            <div slot="end">
+                                <span class="material-icons icon_1">
+                                    check_circle
+                                </span>
+                            </div>
+                        </IgbListItem>
+                        <IgbListItem>
+                            <div slot="title">Ultimate Products Review</div>
+                            <div slot="subtitle">08.13.2020</div>
+                            <div slot="end">
+                                <span class="material-icons icon_2">
+                                    error
+                                </span>
+                            </div>
+                        </IgbListItem>
+                    </IgbList>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

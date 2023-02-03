@@ -1,0 +1,87 @@
+@page "/chips"
+
+<div class="column-layout chips-container">
+    <div class="column-layout container">
+        <div class="row-layout group">
+            <div class="row-layout group_1">
+                <p class="typography__subtitle-2 text">
+                    Default
+                </p>
+            </div>
+            <IgbChip Size="SizableComponentSize.Large" class="chip" chips-scope>
+                Country
+            </IgbChip>
+            <IgbChip Size="SizableComponentSize.Large" class="chip" chips-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        place
+                    </span>
+                </span>
+                Country
+            </IgbChip>
+            <IgbChip Size="SizableComponentSize.Large" class="chip" chips-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        place
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+                Country
+            </IgbChip>
+            <IgbChip Size="SizableComponentSize.Large" class="chip" chips-scope>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+                Country
+            </IgbChip>
+        </div>
+        <div class="row-layout group">
+            <div class="row-layout group_1">
+                <p class="typography__subtitle-2 text">
+                    Disabled
+                </p>
+            </div>
+            <IgbChip Disabled="true" Size="SizableComponentSize.Large" class="chip" chips-scope>
+                Country
+            </IgbChip>
+            <IgbChip Disabled="true" Size="SizableComponentSize.Large" class="chip" chips-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        place
+                    </span>
+                </span>
+                Country
+            </IgbChip>
+            <IgbChip Disabled="true" Size="SizableComponentSize.Large" class="chip" chips-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        place
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+                Country
+            </IgbChip>
+            <IgbChip Disabled="true" Size="SizableComponentSize.Large" class="chip" chips-scope>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+                Country
+            </IgbChip>
+        </div>
+    </div>
+</div>
+
+@code {
+}
