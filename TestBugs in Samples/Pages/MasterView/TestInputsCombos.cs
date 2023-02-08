@@ -4,7 +4,7 @@ using Bugs_in_Samples.Pages.MasterView;
 
 namespace TestBugs_in_Samples
 {
-	public class TestInputGroup
+	public class TestInputsCombos
 	{
 		[Fact]
 		public void ViewIsCreated()
@@ -18,7 +18,7 @@ namespace TestBugs_in_Samples
 				typeof(IgniteUI.Blazor.Controls.IgbInputModule),
 				typeof(IgniteUI.Blazor.Controls.IgbInputModule),
 				typeof(IgniteUI.Blazor.Controls.IgbInputModule));
-			var componentUnderTest = ctx.RenderComponent<InputGroup>();
+			var componentUnderTest = ctx.RenderComponent<InputsCombos>();
 			Assert.NotNull(componentUnderTest);
 		}
 	}

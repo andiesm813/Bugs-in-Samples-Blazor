@@ -1,0 +1,104 @@
+@page "/inputs-combos"
+
+<div class="column-layout inputs-combos-container">
+    <div class="column-layout container">
+        <div class="row-layout group">
+            <div class="row-layout group_1">
+                <p class="typography__subtitle-2 text">
+                    Box
+                </p>
+            </div>
+            <IgbInput Label="Label" Placeholder="and Placeholder" Outlined="false" class="user-input" inputs-combos-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput @bind-value="value" Label="Task Name" Outlined="false" class="user-input" inputs-combos-scope>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput @bind-value="value1" Label="Task Name" Disabled="true" Outlined="false" class="user-input" inputs-combos-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+        </div>
+        <div class="row-layout group">
+            <div class="row-layout group_1">
+                <p class="typography__subtitle-2 text">
+                    Outline
+                </p>
+            </div>
+            <IgbInput Label="Label" Placeholder="and Placeholder" Outlined="true" class="user-input" inputs-combos-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput @bind-value="value" Label="Task Name" Outlined="true" class="user-input" inputs-combos-scope>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+            <IgbInput @bind-value="value1" Label="Task Name" Disabled="true" Outlined="true" class="user-input" inputs-combos-scope>
+                <span slot="prefix">
+                    <span class="material-icons icon">
+                        person
+                    </span>
+                </span>
+                <span slot="suffix">
+                    <span class="material-icons icon">
+                        clear
+                    </span>
+                </span>
+            </IgbInput>
+        </div>
+        <div class="column-layout group_2">
+            <p class="typography__subtitle-2 text">
+                SELECT COMPONENT
+            </p>
+            <div class="row-layout group_3">
+                <div class="row-layout group_1">
+                    <p class="typography__subtitle-2 text">
+                        Box
+                    </p>
+                </div>
+                <span class="user-input">Select not yet available in Blazor</span>
+                <span class="user-input">Select not yet available in Blazor</span>
+                <span class="user-input">Select not yet available in Blazor</span>
+                <span class="user-input">Select not yet available in Blazor</span>
+            </div>
+            <div class="row-layout group_3">
+                <div class="row-layout group_1">
+                    <p class="typography__subtitle-2 text">
+                        Outline
+                    </p>
+                </div>
+                <span class="user-input">Select not yet available in Blazor</span>
+                <span class="user-input">Select not yet available in Blazor</span>
+                <span class="user-input">Select not yet available in Blazor</span>
+                <span class="user-input">Select not yet available in Blazor</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string value = "With content";
+    private string value1 = "Disabled";
+}
