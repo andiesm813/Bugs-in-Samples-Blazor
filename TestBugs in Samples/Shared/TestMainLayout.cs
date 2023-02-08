@@ -4,7 +4,7 @@ using Bugs_in_Samples.Shared;
 
 namespace TestBugs_in_Samples
 {
-	public class TestMasterView
+	public class TestMainLayout
 	{
 		[Fact]
 		public void ViewIsCreated()
@@ -26,9 +26,8 @@ namespace TestBugs_in_Samples
 				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
 				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
 				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
-				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
 				typeof(IgniteUI.Blazor.Controls.IgbRippleModule));
-			var componentUnderTest = ctx.RenderComponent<MasterView>();
+			var componentUnderTest = ctx.RenderComponent<MainLayout>();
 			Assert.NotNull(componentUnderTest);
 		}
 	}

@@ -1,6 +1,6 @@
 using Bunit;
 using Microsoft.Extensions.DependencyInjection;
-using Bugs_in_Samples.Pages.MasterView;
+using Bugs_in_Samples.Pages;
 
 namespace TestBugs_in_Samples
 {
