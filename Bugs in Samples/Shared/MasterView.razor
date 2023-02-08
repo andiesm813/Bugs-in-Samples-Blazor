@@ -26,15 +26,6 @@
                 </span>
                 <div slot="content">Buttons</div>
             </IgbNavDrawerItem>
-            <IgbNavDrawerItem @onclick="@(e => Navigate("button-styles"))">
-                <span slot="icon">
-                    <span class="material-icons icon">
-                        bug_report
-                    </span>
-                    <IgbRipple></IgbRipple>
-                </span>
-                <div slot="content">Button Styles</div>
-            </IgbNavDrawerItem>
             <IgbNavDrawerItem @onclick="@(e => Navigate("button-group"))">
                 <span slot="icon">
                     <span class="material-icons icon">
@@ -44,32 +35,14 @@
                 </span>
                 <div slot="content">Button Group</div>
             </IgbNavDrawerItem>
-            <IgbNavDrawerItem @onclick="@(e => Navigate("floating-action-button"))">
+            <IgbNavDrawerItem @onclick="@(e => Navigate("button-styles"))">
                 <span slot="icon">
                     <span class="material-icons icon">
                         bug_report
                     </span>
                     <IgbRipple></IgbRipple>
                 </span>
-                <div slot="content">Floating Action Button</div>
-            </IgbNavDrawerItem>
-            <IgbNavDrawerItem @onclick="@(e => Navigate("space-between"))">
-                <span slot="icon">
-                    <span class="material-icons icon">
-                        bug_report
-                    </span>
-                    <IgbRipple></IgbRipple>
-                </span>
-                <div slot="content">Space Between</div>
-            </IgbNavDrawerItem>
-            <IgbNavDrawerItem @onclick="@(e => Navigate("cards-opacity"))">
-                <span slot="icon">
-                    <span class="material-icons icon">
-                        bug_report
-                    </span>
-                    <IgbRipple></IgbRipple>
-                </span>
-                <div slot="content">Cards Opacity</div>
+                <div slot="content">Button Styles</div>
             </IgbNavDrawerItem>
             <IgbNavDrawerItem @onclick="@(e => Navigate("card-actions"))">
                 <span slot="icon">
@@ -79,6 +52,15 @@
                     <IgbRipple></IgbRipple>
                 </span>
                 <div slot="content">Card Action Buttons</div>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("cards-opacity"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        bug_report
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Cards Opacity</div>
             </IgbNavDrawerItem>
             <IgbNavDrawerItem @onclick="@(e => Navigate("chips"))">
                 <span slot="icon">
@@ -107,14 +89,14 @@
                 </span>
                 <div slot="content">Grid in Tab Layout</div>
             </IgbNavDrawerItem>
-            <IgbNavDrawerItem @onclick="@(e => Navigate("input-group"))">
+            <IgbNavDrawerItem @onclick="@(e => Navigate("inputs-combos"))">
                 <span slot="icon">
                     <span class="material-icons icon">
                         bug_report
                     </span>
                     <IgbRipple></IgbRipple>
                 </span>
-                <div slot="content">Input Group</div>
+                <div slot="content">Inputs &amp; Combos</div>
             </IgbNavDrawerItem>
             <IgbNavDrawerItem @onclick="@(e => Navigate("master-view-2"))">
                 <span slot="icon">
@@ -123,7 +105,25 @@
                     </span>
                     <IgbRipple></IgbRipple>
                 </span>
-                <div slot="content">Scrollbars Issue</div>
+                <div slot="content">NavBar</div>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("master-view-2"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        bug_report
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Resizing Issue</div>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("space-between"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        bug_report
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Space Between</div>
             </IgbNavDrawerItem>
         </IgbNavDrawer>
         <div class="view-container">

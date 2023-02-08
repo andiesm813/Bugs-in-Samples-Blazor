@@ -1,0 +1,54 @@
+.column-layout {
+    display: flex;
+    flex-direction: column;
+}
+.navigation-bar-container {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 16px;
+    height: 100%;
+}
+.group {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 24px;
+    position: relative;
+    padding: 24px 0 0;
+    min-width: 50px;
+    min-height: 50px;
+}
+.row-layout {
+    display: flex;
+}
+.group_1 {
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    width: max-content;
+    height: max-content;
+}
+.navbar {
+    background-color: hsla(var(--ig-secondary-700));
+    color: hsla(var(--ig-surface-500));
+    height: max-content;
+    min-width: min-content;
+}
+.navbar_1 {
+    background-color: hsla(var(--ig-surface-500));
+    height: max-content;
+}
+.icon-button::part(base) {
+    color: hsla(var(--ig-surface-500));
+}
+.avatar {
+    --background: none;
+}
+.button {
+    height: max-content;
+    min-width: min-content;
+}
+.button::part(base) {
+    color: hsla(var(--ig-surface-500));
+}

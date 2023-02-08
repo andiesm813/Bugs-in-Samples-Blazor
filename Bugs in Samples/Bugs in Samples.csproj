@@ -15,16 +15,16 @@
   <ItemGroup>
     <None Update="Shared/MasterView.razor.css" CssScope="master-view-scope" />
     <None Update="Pages/MasterView/Buttons.razor.css" CssScope="buttons-scope" />
-    <None Update="Pages/MasterView/ButtonStyles.razor.css" CssScope="button-styles-scope" />
     <None Update="Pages/MasterView/ButtonGroup.razor.css" CssScope="button-group-scope" />
-    <None Update="Pages/MasterView/FloatingActionButton.razor.css" CssScope="floating-action-button-scope" />
-    <None Update="Pages/MasterView/SpaceBetween.razor.css" CssScope="space-between-scope" />
-    <None Update="Pages/MasterView/CardsOpacity.razor.css" CssScope="cards-opacity-scope" />
+    <None Update="Pages/MasterView/ButtonStyles.razor.css" CssScope="button-styles-scope" />
     <None Update="Pages/MasterView/CardActions.razor.css" CssScope="card-actions-scope" />
+    <None Update="Pages/MasterView/CardsOpacity.razor.css" CssScope="cards-opacity-scope" />
     <None Update="Pages/MasterView/Chips.razor.css" CssScope="chips-scope" />
     <None Update="Pages/MasterView/Dialog.razor.css" CssScope="dialog-scope" />
     <None Update="Pages/MasterView/GridinTabLayout.razor.css" CssScope="gridin-tab-layout-scope" />
-    <None Update="Pages/MasterView/InputGroup.razor.css" CssScope="input-group-scope" />
+    <None Update="Pages/MasterView/InputsCombos.razor.css" CssScope="inputs-combos-scope" />
+    <None Update="Pages/MasterView/NavigationBar.razor.css" CssScope="navigation-bar-scope" />
+    <None Update="Pages/MasterView/SpaceBetween.razor.css" CssScope="space-between-scope" />
     <None Update="Shared/MasterView2.razor.css" CssScope="master-view-2-scope" />
     <None Update="Pages/MasterView2/ResizingIssue.razor.css" CssScope="resizing-issue-scope" />
   </ItemGroup>
