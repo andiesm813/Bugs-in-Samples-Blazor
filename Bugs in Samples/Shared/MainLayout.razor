@@ -98,6 +98,15 @@
                 </span>
                 <div slot="content">Inputs &amp; Combos</div>
             </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("list"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        bug_report
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">List</div>
+            </IgbNavDrawerItem>
             <IgbNavDrawerItem @onclick="@(e => Navigate("navigation-bar"))">
                 <span slot="icon">
                     <span class="material-icons icon">

@@ -12,12 +12,7 @@ namespace TestBugs_in_Samples
 			using var ctx = new TestContext();
 			ctx.JSInterop.Mode = JSRuntimeMode.Loose;
 			ctx.Services.AddIgniteUIBlazor(
-				typeof(IgniteUI.Blazor.Controls.IgbInputModule),
-				typeof(IgniteUI.Blazor.Controls.IgbInputModule),
-				typeof(IgniteUI.Blazor.Controls.IgbInputModule),
-				typeof(IgniteUI.Blazor.Controls.IgbInputModule),
-				typeof(IgniteUI.Blazor.Controls.IgbInputModule),
-				typeof(IgniteUI.Blazor.Controls.IgbInputModule));
+				typeof(IgbInputModule));
 			var componentUnderTest = ctx.RenderComponent<InputsCombos>();
 			Assert.NotNull(componentUnderTest);
 		}

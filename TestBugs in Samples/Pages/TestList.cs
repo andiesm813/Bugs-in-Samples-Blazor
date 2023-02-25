@@ -1,11 +1,10 @@
 using Bunit;
 using Microsoft.Extensions.DependencyInjection;
 using Bugs_in_Samples.Pages;
-using Bugs_in_Samples.Northwind;
 
 namespace TestBugs_in_Samples
 {
-	public class TestGridinTabLayout
+	public class TestList
 	{
 		[Fact]
 		public void ViewIsCreated()
@@ -13,10 +12,9 @@ namespace TestBugs_in_Samples
 			using var ctx = new TestContext();
 			ctx.JSInterop.Mode = JSRuntimeMode.Loose;
 			ctx.Services.AddIgniteUIBlazor(
-				typeof(IgbGridModule),
-				typeof(IgbTabsModule));
-			ctx.Services.AddScoped<INorthwindService>(sp => new MockNorthwindService());
-			var componentUnderTest = ctx.RenderComponent<GridinTabLayout>();
+				typeof(IgbListModule),
+				typeof(IgbAvatarModule));
+			var componentUnderTest = ctx.RenderComponent<List>();
 			Assert.NotNull(componentUnderTest);
 		}
 	}

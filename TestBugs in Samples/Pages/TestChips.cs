@@ -12,14 +12,7 @@ namespace TestBugs_in_Samples
 			using var ctx = new TestContext();
 			ctx.JSInterop.Mode = JSRuntimeMode.Loose;
 			ctx.Services.AddIgniteUIBlazor(
-				typeof(IgniteUI.Blazor.Controls.IgbChipModule),
-				typeof(IgniteUI.Blazor.Controls.IgbChipModule),
-				typeof(IgniteUI.Blazor.Controls.IgbChipModule),
-				typeof(IgniteUI.Blazor.Controls.IgbChipModule),
-				typeof(IgniteUI.Blazor.Controls.IgbChipModule),
-				typeof(IgniteUI.Blazor.Controls.IgbChipModule),
-				typeof(IgniteUI.Blazor.Controls.IgbChipModule),
-				typeof(IgniteUI.Blazor.Controls.IgbChipModule));
+				typeof(IgbChipModule));
 			var componentUnderTest = ctx.RenderComponent<Chips>();
 			Assert.NotNull(componentUnderTest);
 		}
