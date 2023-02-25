@@ -23,6 +23,7 @@
     <None Update="Pages/Dialog.razor.css" CssScope="dialog-scope" />
     <None Update="Pages/GridinTabLayout.razor.css" CssScope="gridin-tab-layout-scope" />
     <None Update="Pages/InputsCombos.razor.css" CssScope="inputs-combos-scope" />
+    <None Update="Pages/List.razor.css" CssScope="list-scope" />
     <None Update="Pages/NavigationBar.razor.css" CssScope="navigation-bar-scope" />
     <None Update="Pages/SpaceBetween.razor.css" CssScope="space-between-scope" />
   </ItemGroup>

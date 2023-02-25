@@ -1,5 +1,5 @@
 @page "/gridin-tab-layout"
-@inject Northwind.NorthwindService northwindService
+@inject Northwind.INorthwindService northwindService
 
 <div class="column-layout grid-in-tab-layout-container">
     <div class="row-layout container">
@@ -60,7 +60,7 @@
 </div>
 
 @code {
-    private Northwind.EmployeesType[] northwindEmployees = Array.Empty<Northwind.EmployeesType>();
+    private List<Northwind.EmployeesType> northwindEmployees = new();
 
     protected override async Task OnInitializedAsync()
     {

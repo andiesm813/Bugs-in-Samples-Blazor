@@ -11,7 +11,6 @@ namespace TestBugs_in_Samples
 		{
 			using var ctx = new TestContext();
 			ctx.JSInterop.Mode = JSRuntimeMode.Loose;
-			ctx.Services.AddIgniteUIBlazor();
 			var componentUnderTest = ctx.RenderComponent<ButtonGroup>();
 			Assert.NotNull(componentUnderTest);
 		}
