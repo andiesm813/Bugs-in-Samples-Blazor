@@ -27,6 +27,7 @@
     <None Update="Pages/NavigationBar.razor.css" CssScope="navigation-bar-scope" />
     <None Update="Pages/Rating.razor.css" CssScope="rating-scope" />
     <None Update="Pages/SpaceBetween.razor.css" CssScope="space-between-scope" />
+    <None Update="Pages/TextLinks.razor.css" CssScope="text-links-scope" />
   </ItemGroup>
 
 </Project>

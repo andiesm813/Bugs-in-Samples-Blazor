@@ -134,6 +134,15 @@
                 </span>
                 <div slot="content">Space Between</div>
             </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("text-links"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        bug_report
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Text &amp; Links</div>
+            </IgbNavDrawerItem>
         </IgbNavDrawer>
         <div class="view-container">
             @Body
