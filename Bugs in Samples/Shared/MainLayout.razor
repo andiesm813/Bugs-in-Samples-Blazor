@@ -116,6 +116,15 @@
                 </span>
                 <div slot="content">NavBar</div>
             </IgbNavDrawerItem>
+            <IgbNavDrawerItem @onclick="@(e => Navigate("rating"))">
+                <span slot="icon">
+                    <span class="material-icons icon">
+                        bug_report
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </span>
+                <div slot="content">Rating</div>
+            </IgbNavDrawerItem>
             <IgbNavDrawerItem @onclick="@(e => Navigate("space-between"))">
                 <span slot="icon">
                     <span class="material-icons icon">

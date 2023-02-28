@@ -31,6 +31,7 @@ void RegisterIgniteUI(IServiceCollection services)
         typeof(IgbChipModule),
         typeof(IgbGridModule),
         typeof(IgbTabsModule),
-        typeof(IgbInputModule)
+        typeof(IgbInputModule),
+        typeof(IgbRatingModule)
     );
 }
